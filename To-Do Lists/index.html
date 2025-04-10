@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple To-Do list project</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="/stylesheets/media.css">
+</head>
+
+<body>
+
+    <header class="container-fluid header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#" title="Simple-code">Simple Code</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" title="Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" title="About">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false" title="">
+                                Tasks
+                            </a>
+                            <ul class="dropdown-menu mt-2" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Create New</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex center">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" title="search Box">
+                        <button class="btn btn-outline-success" type="submit" title="Search Button">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="container-fluid first-section">
+        <h6 class="text-center m-5" style="color:#dd0000;"><strong>*Note : </strong>Delete all the task before leaving the window.</h6>
+        <div class="container">
+            <div
+                class="shadow-sm d-flex justify-content-space-between flex-column align-items-center border border-2 rounded-3 mt-3">
+                <h1 class="text-center" title="Simple To-Do List">Simple To-Do List</h1>
+                <div class="container d-flex justify-content-center gap-3 mt-3 mb-3">
+                    <button class="border p-1 rounded-3" style="width: 40%; background-color: #1b4e1b; color: #fff;" id="create-btn" title="Create button"><i class="fa-solid fa-plus"></i>&nbsp;Create New</button>
+                    <button class="border p-1 rounded-3" style="width: 40%; background-color: #aa0000; color: #fff;" id="delete-btn" title="Delete button"><i class="fa-solid fa-trash"></i>&nbsp;Delete all</button>
+                </div>
+
+                <div class="list-box d-flex flex-column">
+                    <ul id="list">
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="/scripts/main.js"></script>
+</body>
+
+</html>
